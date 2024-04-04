@@ -1,0 +1,286 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to right, rgb(7, 24, 80), rgb(12, 16, 27));
+    padding-top: 16px;
+    color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+nav {
+    background: linear-gradient(to right, rgb(12, 16, 27), rgb(7, 24, 80));
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-hamburguer span {
+    height: 3px;
+    width: 30px;
+    background-color: white;
+    display: block;
+    margin-bottom: 6px;
+    cursor: pointer;
+}
+
+.container-flex {
+    display: flex;
+}
+
+section {
+    padding-top: 200px;
+    padding: 48px 0;
+}
+
+#section-sobre {
+    padding-top: 200px;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.lista-veiculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    width: 30%;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.lista-veiculos li p {
+    max-height: 160px;
+    overflow: hidden;
+}
+
+.lista-veiculos li .botao,
+.lista-veiculos li .interest {
+    display: block;
+    width: 100%;
+    padding:  8px 0;
+    margin-top: 8px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: gray;
+}
+
+
+.description {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.fomr-campo {
+    margin-bottom: 16px;
+}
+
+.fomr-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.fomr-campo input,
+.fomr-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+
+}
+
+.fomr-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+button {
+    border: none;
+    display: block;
+    width: 120px;
+    padding:  8px 0;
+    margin-top: 8px;
+    border-radius: 6px;
+    background-color: rgb(28, 160, 46);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    background: linear-gradient(to right, rgb(12, 16, 27), rgb(7, 24, 80));
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ccc;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-media a img {
+    height: 36px;
+    width: 36px;
+}
+
+.social-media a {
+    display: inline-block;
+    color: #fff;
+    margin: 0 5px;
+}
+
+.social-media a:hover {
+    transform: scale(2x);
+}
+
+
+#texto {
+    height: 100px; 
+    overflow: hidden;
+}
+
+#botao {
+    display: block;
+    margin-top: 10px;
+}
+
+
+
+@media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .lista-veiculos li{
+        width: 48%; 
+    }
+
+
+    #section-sobre img {
+        max-width: 300px; 
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+    .lista-veiculos li {
+        width: 100%; 
+    }
+
+    #section-sobre img {
+        max-width: 200px; 
+    }
+
+    nav {
+        display: block; 
+    }
+
+    nav li {
+        display: block; 
+        margin-bottom: 10px;
+    }
+
+    .menu-hamburguer {
+        display: block; 
+    }
+
+    #section-sobre {
+        padding: 48px 24px;
+    }
+
+    #section-sobre .container-flex {
+        flex-wrap: wrap; 
+    }
+
+    #section-sobre img {
+        max-width: 45%; 
+        margin-right: 4%; 
+    }
+
+    #section-sobre div {
+        width: 45%;
+    }
+}
